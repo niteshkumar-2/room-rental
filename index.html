@@ -5,32 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Rental Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-gray-100">
 
-    <!-- 🔹 Navbar -->
+    <!-- Splash Screen -->
+    <div id="splashScreen" class="fixed top-0 left-0 w-full h-full bg-blue-700 flex flex-col items-center justify-center text-white text-2xl font-bold">
+        <p>🚀 Welcome to Room Rental Service</p>
+        <p>Created by Himanshu & Mohit</p>
+    </div>
+
+    <!-- Navigation Bar -->
     <nav class="bg-blue-600 p-4 fixed w-full top-0 shadow-md z-50">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-white text-2xl font-bold">🏠 Room Rental</a>
             
-            <!-- 🔹 Navigation Links -->
+            <!-- Navigation Links -->
             <ul class="hidden md:flex space-x-6 text-white">
                 <li><a href="#" class="hover:text-gray-300">Home</a></li>
                 <li><a href="#" class="hover:text-gray-300">Rooms</a></li>
                 <li><a href="#" class="hover:text-gray-300">Contact</a></li>
             </ul>
 
-            <!-- 🔹 Search Bar -->
+            <!-- Search Bar -->
             <input type="text" placeholder="Search rooms..." class="px-4 py-2 rounded-md hidden md:block">
 
-            <!-- 🔹 Dark Mode Toggle -->
+            <!-- Dark Mode Toggle -->
             <button id="darkModeToggle" class="text-white ml-4">🌙</button>
 
-            <!-- 🔹 Mobile Menu Button -->
+            <!-- Mobile Menu Button -->
             <button class="md:hidden text-white text-2xl" id="menuToggle">☰</button>
         </div>
 
-        <!-- 🔹 Mobile Menu -->
+       
         <div class="hidden bg-blue-700 text-white p-4" id="mobileMenu">
             <a href="#" class="block py-2">Home</a>
             <a href="#" class="block py-2">Rooms</a>
@@ -38,11 +45,18 @@
         </div>
     </nav>
 
-    <!-- 🔹 Page Content -->
-    <div class="mt-20 p-6">
+  
+    <main class="mt-20 p-6">
         <h1 class="text-3xl font-bold">Find Your Perfect Room</h1>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6" id="roomList"></div>
-    </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" id="roomList">
+     
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4 mt-10">
+        Created with ❤️ by Himanshu & Mohit
+    </footer>
 
     <script src="script.js"></script>
 </body>
