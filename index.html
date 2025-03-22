@@ -1,39 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Rental Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Smooth transition for dark mode */
-        body { transition: background 0.3s, color 0.3s; }
-        /* Splash screen animation */
-        #splashScreen {
-            animation: fadeOut 2s ease-out forwards;
-            animation-delay: 2s;
-        }
-        @keyframes fadeOut {
-            from { opacity: 1; }
-            to { opacity: 0; visibility: hidden; }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-100">
-    <!-- Splash Screen -->
-    <div id="splashScreen" class="fixed top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600 to-purple-700 flex flex-col items-center justify-center text-white text-3xl font-bold">
-        <p>🚀 Welcome to Room Rental Service</p>
+
+<body class="relative bg-cover bg-center bg-no-repeat" style="background-image: url('images/background.jpg');">
+    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+
+    <div id="splashScreen"
+        class="fixed top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600 to-purple-700 flex flex-col items-center justify-center text-white text-3xl font-bold z-50">
+        <p> Welcome to Room Rental Service</p>
         <p>Created by Himanshu & Mohit</p>
     </div>
 
-    <!-- Navigation Bar -->
     <nav class="bg-blue-600 p-4 fixed w-full top-0 shadow-lg z-50">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-white text-2xl font-bold">🏠 Room Rental</a>
             <ul class="hidden md:flex space-x-6 text-white">
                 <li><a href="#" class="hover:text-gray-300">Home</a></li>
-                <li><a href="#" class="hover:text-gray-300">Rooms</a></li>
-                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                <li><a href="#" id="showRooms" class="hover:text-gray-300 cursor-pointer">Rooms</a></li>
+                <li><a href="#" id="showRoomsMobile" class="hover:text-gray-300">Contact</a></li>
             </ul>
             <input type="text" placeholder="Search rooms..." class="px-4 py-2 rounded-md hidden md:block">
             <button id="darkModeToggle" class="text-white ml-4">🌙</button>
@@ -41,29 +32,23 @@
         </div>
         <div class="hidden bg-blue-700 text-white p-4" id="mobileMenu">
             <a href="#" class="block py-2">Home</a>
-            <a href="#" class="block py-2">Rooms</a>
+            <a href="#" id="showRoomsMobile" class="block py-2 cursor-pointer">Rooms</a>
             <a href="#" class="block py-2">Contact</a>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="mt-24 p-6">
-        <h1 class="text-4xl font-bold text-center">Find Your Perfect Room</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" id="roomList"></div>
+    <div class="container mx-auto mt-24 p-6 min-h-screen relative z-10">
+        <h1 class="text-4xl font-bold text-center text-white">Find Your Perfect Room</h1>
+        <div id="roomList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6"></div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-blue-600 text-white text-center p-4 mt-10">
-        Created with ❤️ by Himanshu & Mohit
+    <footer class="bg-blue-600 text-white text-center p-4 mt-10 relative z-10">
+        <p>Created with by Himanshu & Mohit</p>
     </footer>
 
-    <script>
-        // Dark Mode Toggle
-        const toggle = document.getElementById("darkModeToggle");
-        toggle.addEventListener("click", () => {
-            document.body.classList.toggle("bg-gray-900");
-            document.body.classList.toggle("text-white");
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
