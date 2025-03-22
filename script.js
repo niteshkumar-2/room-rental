@@ -5,10 +5,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     document.getElementById("splashScreen").style.display = "none";
-  }, 3000);
+  }, 2000);
 
   document.getElementById("menuToggle").addEventListener("click", () => {
     document.getElementById("mobileMenu").classList.toggle("hidden");
+  });
+
+  document.getElementById("homeLink").addEventListener("click", () => {
+    alert(" Welcome to Room Rental Service!");
+  });
+
+  document.getElementById("showRooms").addEventListener("click", fetchRooms);
+
+  document.getElementById("showRoommate").addEventListener("click", () => {
+    alert("Roommate Services Coming Soon! 😊");
+  });
+
+  document.getElementById("showRoomsMobile").addEventListener("click", () => {
+    alert("📢 Please wait for a few days, we're working on it!");
   });
 
   document.getElementById("showRooms").addEventListener("click", fetchRooms);

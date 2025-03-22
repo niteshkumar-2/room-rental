@@ -17,15 +17,16 @@
         <p> Welcome to Room Rental Service</p>
         <p>Created by Himanshu & Mohit</p>
     </div>
-
     <nav class="bg-blue-600 p-4 fixed w-full top-0 shadow-lg z-50">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-white text-2xl font-bold">🏠 Room Rental</a>
             <ul class="hidden md:flex space-x-6 text-white">
-                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" id="homeLink" class="hover:text-gray-300">Home</a></li>
                 <li><a href="#" id="showRooms" class="hover:text-gray-300 cursor-pointer">Rooms</a></li>
+                <li><a href="#" id="showRoommate" class="hover:text-gray-300 cursor-pointer">Roommate</a></li>
                 <li><a href="#" id="showRoomsMobile" class="hover:text-gray-300">Contact</a></li>
             </ul>
+            
             <input type="text" placeholder="Search rooms..." class="px-4 py-2 rounded-md hidden md:block">
             <button id="darkModeToggle" class="text-white ml-4">🌙</button>
             <button class="md:hidden text-white text-2xl" id="menuToggle">☰</button>
@@ -36,19 +37,15 @@
             <a href="#" class="block py-2">Contact</a>
         </div>
     </nav>
-
-    <!-- Main Content -->
     <div class="container mx-auto mt-24 p-6 min-h-screen relative z-10">
         <h1 class="text-4xl font-bold text-center text-white">Find Your Perfect Room</h1>
         <div id="roomList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6"></div>
     </div>
 
-    <!-- Footer -->
     <footer class="bg-blue-600 text-white text-center p-4 mt-10 relative z-10">
         <p>Created with by Himanshu & Mohit</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
