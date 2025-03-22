@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Shivam Singh",
+        "location": "Noida, Uttar Pradesh, India",
+        "rent": 9000,
+        "lookingFor": "Any Room",
+        "image": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+        "name": "Devanshi Singh",
+        "location": "Noida, Uttar Pradesh, India",
+        "rent": 5000,
+        "lookingFor": "Any Room",
+        "image": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+        "name": "Rohan Verma",
+        "location": "Delhi, India",
+        "rent": 7000,
+        "lookingFor": "Single Room",
+        "image": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+        "name": "Priya Sharma",
+        "location": "Mumbai, India",
+        "rent": 12000,
+        "lookingFor": "Sharing Room",
+        "image": "https://randomuser.me/api/portraits/women/4.jpg"
+    },
+    {
+        "name": "Amit Mehra",
+        "location": "Bangalore, India",
+        "rent": 15000,
+        "lookingFor": "Private Room",
+        "image": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+        "name": "Sneha Kapoor",
+        "location": "Hyderabad, India",
+        "rent": 8500,
+        "lookingFor": "Single Room",
+        "image": "https://randomuser.me/api/portraits/women/6.jpg"
+    },
+    {
+        "name": "Vikas Yadav",
+        "location": "Pune, India",
+        "rent": 10000,
+        "lookingFor": "Studio Apartment",
+        "image": "https://randomuser.me/api/portraits/men/7.jpg"
+    },
+    {
+        "name": "Ritika Malhotra",
+        "location": "Chennai, India",
+        "rent": 11000,
+        "lookingFor": "1BHK",
+        "image": "https://randomuser.me/api/portraits/women/8.jpg"
+    },
+    {
+        "name": "Anirudh Saxena",
+        "location": "Kolkata, India",
+        "rent": 9500,
+        "lookingFor": "Sharing Room",
+        "image": "https://randomuser.me/api/portraits/men/9.jpg"
+    },
+    {
+        "name": "Meera Joshi",
+        "location": "Jaipur, India",
+        "rent": 7000,
+        "lookingFor": "Single Room",
+        "image": "https://randomuser.me/api/portraits/women/10.jpg"
+    },
+    {
+        "name": "Sandeep Sharma",
+        "location": "Lucknow, India",
+        "rent": 8000,
+        "lookingFor": "Any Room",
+        "image": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+        "name": "Pooja Patel",
+        "location": "Indore, India",
+        "rent": 6000,
+        "lookingFor": "Single Room",
+        "image": "https://randomuser.me/api/portraits/women/12.jpg"
+    },
+    {
+        "name": "Rajeev Nair",
+        "location": "Kochi, India",
+        "rent": 12000,
+        "lookingFor": "1BHK",
+        "image": "https://randomuser.me/api/portraits/men/13.jpg"
+    },
+    {
+        "name": "Kavya Das",
+        "location": "Bhubaneswar, India",
+        "rent": 7500,
+        "lookingFor": "Studio Apartment",
+        "image": "https://randomuser.me/api/portraits/women/14.jpg"
+    },
+    {
+        "name": "Rahul Agarwal",
+        "location": "Surat, India",
+        "rent": 6500,
+        "lookingFor": "Single Room",
+        "image": "https://randomuser.me/api/portraits/men/15.jpg"
+    },
+    {
+        "name": "Neha Bansal",
+        "location": "Nagpur, India",
+        "rent": 8900,
+        "lookingFor": "Sharing Room",
+        "image": "https://randomuser.me/api/portraits/women/16.jpg"
+    },
+    {
+        "name": "Mohit Chauhan",
+        "location": "Bhopal, India",
+        "rent": 7800,
+        "lookingFor": "Any Room",
+        "image": "https://randomuser.me/api/portraits/men/17.jpg"
+    },
+    {
+        "name": "Anjali Gupta",
+        "location": "Chandigarh, India",
+        "rent": 8500,
+        "lookingFor": "1BHK",
+        "image": "https://randomuser.me/api/portraits/women/18.jpg"
+    },
+    {
+        "name": "Karan Mehta",
+        "location": "Ahmedabad, India",
+        "rent": 9200,
+        "lookingFor": "Studio Apartment",
+        "image": "https://randomuser.me/api/portraits/men/19.jpg"
+    },
+    {
+        "name": "Simran Kaur",
+        "location": "Ludhiana, India",
+        "rent": 7200,
+        "lookingFor": "Single Room",
+        "image": "https://randomuser.me/api/portraits/women/20.jpg"
+    }
+]
