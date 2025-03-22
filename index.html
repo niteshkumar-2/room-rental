@@ -5,39 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Room Rental Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Smooth transition for dark mode */
+        body { transition: background 0.3s, color 0.3s; }
+        /* Splash screen animation */
+        #splashScreen {
+            animation: fadeOut 2s ease-out forwards;
+            animation-delay: 2s;
+        }
+        @keyframes fadeOut {
+            from { opacity: 1; }
+            to { opacity: 0; visibility: hidden; }
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
-
     <!-- Splash Screen -->
-    <div id="splashScreen" class="fixed top-0 left-0 w-full h-full bg-blue-700 flex flex-col items-center justify-center text-white text-2xl font-bold">
+    <div id="splashScreen" class="fixed top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600 to-purple-700 flex flex-col items-center justify-center text-white text-3xl font-bold">
         <p>🚀 Welcome to Room Rental Service</p>
         <p>Created by Himanshu & Mohit</p>
     </div>
 
     <!-- Navigation Bar -->
-    <nav class="bg-blue-600 p-4 fixed w-full top-0 shadow-md z-50">
+    <nav class="bg-blue-600 p-4 fixed w-full top-0 shadow-lg z-50">
         <div class="container mx-auto flex justify-between items-center">
             <a href="#" class="text-white text-2xl font-bold">🏠 Room Rental</a>
-            
-            <!-- Navigation Links -->
             <ul class="hidden md:flex space-x-6 text-white">
                 <li><a href="#" class="hover:text-gray-300">Home</a></li>
                 <li><a href="#" class="hover:text-gray-300">Rooms</a></li>
                 <li><a href="#" class="hover:text-gray-300">Contact</a></li>
             </ul>
-
-            <!-- Search Bar -->
             <input type="text" placeholder="Search rooms..." class="px-4 py-2 rounded-md hidden md:block">
-
-            <!-- Dark Mode Toggle -->
             <button id="darkModeToggle" class="text-white ml-4">🌙</button>
-
-            <!-- Mobile Menu Button -->
             <button class="md:hidden text-white text-2xl" id="menuToggle">☰</button>
         </div>
-
-       
         <div class="hidden bg-blue-700 text-white p-4" id="mobileMenu">
             <a href="#" class="block py-2">Home</a>
             <a href="#" class="block py-2">Rooms</a>
@@ -45,19 +46,24 @@
         </div>
     </nav>
 
-  
-    <main class="mt-20 p-6">
-        <h1 class="text-3xl font-bold">Find Your Perfect Room</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" id="roomList">
-     
-        </div>
-    </main>
+    <!-- Main Content -->
+    <div class="mt-24 p-6">
+        <h1 class="text-4xl font-bold text-center">Find Your Perfect Room</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" id="roomList"></div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-blue-600 text-white text-center p-4 mt-10">
         Created with ❤️ by Himanshu & Mohit
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Dark Mode Toggle
+        const toggle = document.getElementById("darkModeToggle");
+        toggle.addEventListener("click", () => {
+            document.body.classList.toggle("bg-gray-900");
+            document.body.classList.toggle("text-white");
+        });
+    </script>
 </body>
 </html>
