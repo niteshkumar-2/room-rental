@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "title": "Cozy Apartment in City Center",
+        "location": "New York, USA",
+        "price": 1200,
+        "image": "images/room1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Luxury Villa with Pool",
+        "location": "Los Angeles, USA",
+        "price": 2500,
+        "image": "images/room2.jpg"
+    }
+]
