@@ -3,25 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const darkModeToggle = document.getElementById("darkModeToggle");
     const body = document.getElementById("body");
 
-    // Load Dark Mode Preference
-    if (localStorage.getItem("darkMode") === "enabled") {
-        body.classList.add("bg-gray-900", "text-white");
-        darkModeToggle.textContent = "☀️";
-    }
-
-    // Dark Mode Toggle
-    darkModeToggle.addEventListener("click", () => {
-        if (body.classList.contains("bg-gray-900")) {
-            body.classList.remove("bg-gray-900", "text-white");
-            localStorage.setItem("darkMode", "disabled");
-            darkModeToggle.textContent = "🌙";
-        } else {
-            body.classList.add("bg-gray-900", "text-white");
-            localStorage.setItem("darkMode", "enabled");
-            darkModeToggle.textContent = "☀️";
-        }
-    });
-
     // Fetch Room Data
     fetch("room.json")
         .then(response => response.json())

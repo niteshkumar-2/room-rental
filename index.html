@@ -3,22 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Room Rental Service</title>
+    <title>Room Rental Service</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<body class="bg-gray-100">
 
-<body class="bg-gray-100 p-6 transition duration-300" id="body">
-    <header class="flex justify-between items-center mb-6">
-        <h1 class="text-3xl font-bold">🏡 Find Your Perfect Room</h1>
-        <button id="darkModeToggle" class="bg-gray-200 p-2 rounded">🌙</button>
+    <!-- 🔹 Navbar -->
+    <nav class="bg-blue-600 p-4 fixed w-full top-0 shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">🏠 Room Rental</a>
+            
+            <!-- 🔹 Navigation Links -->
+            <ul class="hidden md:flex space-x-6 text-white">
+                <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                <li><a href="#" class="hover:text-gray-300">Rooms</a></li>
+                <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+            </ul>
 
+            <!-- 🔹 Search Bar -->
+            <input type="text" placeholder="Search rooms..." class="px-4 py-2 rounded-md hidden md:block">
 
-    
-    </header>
-    <div class="max-w-7xl mx-auto">
-        <div id="roomList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Rooms will be added dynamically -->
+            <!-- 🔹 Dark Mode Toggle -->
+            <button id="darkModeToggle" class="text-white ml-4">🌙</button>
+
+            <!-- 🔹 Mobile Menu Button -->
+            <button class="md:hidden text-white text-2xl" id="menuToggle">☰</button>
         </div>
+
+        <!-- 🔹 Mobile Menu -->
+        <div class="hidden bg-blue-700 text-white p-4" id="mobileMenu">
+            <a href="#" class="block py-2">Home</a>
+            <a href="#" class="block py-2">Rooms</a>
+            <a href="#" class="block py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- 🔹 Page Content -->
+    <div class="mt-20 p-6">
+        <h1 class="text-3xl font-bold">Find Your Perfect Room</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6" id="roomList"></div>
     </div>
 
     <script src="script.js"></script>
