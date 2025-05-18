@@ -4,7 +4,7 @@ const homeBtn = document.getElementById("homeBtn");
 const aboutBtn = document.getElementById("aboutBtn");
 const serviceBtn = document.getElementById("serviceBtn");
 const contactBtn = document.getElementById("contactBtn");
-const comingsoon = document.getElementById("comingsoon");
+const comingSoon = document.getElementById("comingSoon");
 
 let allRooms = [];
 
@@ -280,7 +280,7 @@ contactBtn.addEventListener("click", (e) => {
     </div>`;
 });
 
-comingsoon.addEventListener("click", (e) => {
+comingSoon.addEventListener("click", (e) => {
   e.preventDefault();
   roomList.innerHTML = `
     <section 
