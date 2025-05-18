@@ -106,13 +106,13 @@ aboutBtn.addEventListener("click", (e) => {
 
         <div class="flex justify-center gap-8 my-6">
           <div class="text-center">
-            <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Himanshu" class="w-24 h-24 rounded-full mx-auto shadow-md object-cover" />
+           <img src="images/himanshupic.jpeg" alt="Himanshu" class="w-24 h-24 rounded-full mx-auto shadow-md object-cover" />
             <p class="mt-2 font-semibold text-indigo-700">Himanshu</p>
           </div>
-          <div class="text-center">
-            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Mohit" class="w-24 h-24 rounded-full mx-auto shadow-md object-cover" />
-            <p class="mt-2 font-semibold text-indigo-700">Mohit</p>
-          </div>
+         <div class="text-center">
+          <img src="images/mohit.jpeg" alt="Mohit" class="w-24 h-24 rounded-full mx-auto shadow-md object-cover" />
+          <p class="mt-2 font-semibold text-indigo-700">Mohit</p>
+         </div>
         </div>
 
         <p class="mt-6 text-center text-purple-600 italic font-medium max-w-xl mx-auto">
@@ -134,8 +134,8 @@ aboutBtn.addEventListener("click", (e) => {
       <div class="mt-8">
         <h3 class="text-xl font-semibold text-purple-600 mb-3">📱 Contact Details</h3>
         <ul class="space-y-3 text-blue-700 text-base font-medium">
-          <li>📞 Himanshu: <a href="tel:9876543210" class="hover:underline hover:text-purple-600 transition">9876543210</a></li>
-          <li>📞 Mohit: <a href="tel:9123456789" class="hover:underline hover:text-purple-600 transition">9123456789</a></li>
+          <li>📞 Himanshu: <a href="tel:9341002483" class="hover:underline hover:text-purple-600 transition">9341002483</a></li>
+          <li>📞 Mohit: <a href="tel:6200171458" class="hover:underline hover:text-purple-600 transition">6200171458</a></li>
           <li>📧 Email: <a href="mailto:support@roomrental.com" class="hover:underline hover:text-purple-600 transition">support@roomrental.com</a></li>
         </ul>
       </div>
