@@ -1,7 +1,7 @@
 body {
-    background: url('images/background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    transition: background 0.3s, color 0.3s;
+  background: url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  transition: background 0.3s, color 0.3s;
 }
 html {
   scroll-behavior: smooth;

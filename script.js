@@ -301,59 +301,71 @@ comingsoon.addEventListener("click", (e) => {
             icon: "🔐",
             color: "text-blue-600",
             title: "Admin Login Panel",
-            desc: "Role-based secure login system for administrators to manage platform settings."
+            desc: "Role-based secure login system for administrators to manage platform settings.",
           },
           {
             icon: "🏠",
             color: "text-green-600",
             title: "Room Management",
-            desc: "Add, edit, or remove room details with real-time availability tracking."
+            desc: "Add, edit, or remove room details with real-time availability tracking.",
           },
           {
             icon: "🛏️",
             color: "text-teal-600",
             title: "Room Sharing Options",
-            desc: "Support for shared accommodations, with the ability to assign multiple users to a single room."
+            desc: "Support for shared accommodations, with the ability to assign multiple users to a single room.",
           },
           {
             icon: "📜",
             color: "text-yellow-600",
             title: "Booking History",
-            desc: "Easily view and manage all current and previous bookings."
+            desc: "Easily view and manage all current and previous bookings.",
           },
           {
             icon: "💳",
             color: "text-purple-600",
             title: "Payment Integration",
-            desc: "Enable users to pay rent via secure online payment gateways."
+            desc: "Enable users to pay rent via secure online payment gateways.",
           },
           {
             icon: "👤",
             color: "text-pink-600",
             title: "User Profiles",
-            desc: "Allow tenants to update contact info, view bookings, and more."
+            desc: "Allow tenants to update contact info, view bookings, and more.",
           },
           {
             icon: "📊",
             color: "text-indigo-600",
             title: "Admin Dashboard",
-            desc: "Interactive graphs and stats for data-driven decisions."
+            desc: "Interactive graphs and stats for data-driven decisions.",
           },
           {
             icon: "📩",
             color: "text-red-600",
             title: "Notifications",
-            desc: "Receive alerts for bookings, payments, reminders, and feedback."
-          }
-        ].map(feature => `
-          <article class="flex items-start gap-4" tabindex="0" role="group" aria-labelledby="title-${feature.title.replace(/\s/g,'')}">
-            <span class="${feature.color} text-3xl flex-shrink-0" aria-hidden="true">${feature.icon}</span>
+            desc: "Receive alerts for bookings, payments, reminders, and feedback.",
+          },
+        ]
+          .map(
+            (feature) => `
+          <article class="flex items-start gap-4" tabindex="0" role="group" aria-labelledby="title-${feature.title.replace(
+            /\s/g,
+            ""
+          )}">
+            <span class="${
+              feature.color
+            } text-3xl flex-shrink-0" aria-hidden="true">${feature.icon}</span>
             <div>
-              <h3 id="title-${feature.title.replace(/\s/g,'')}" class="font-semibold text-lg">${feature.title}</h3>
+              <h3 id="title-${feature.title.replace(
+                /\s/g,
+                ""
+              )}" class="font-semibold text-lg">${feature.title}</h3>
               <p class="text-sm text-gray-600">${feature.desc}</p>
             </div>
           </article>
-        `).join('')}
+        `
+          )
+          .join("")}
       </div>
 
       <footer class="text-center text-sm text-gray-500 pt-6 border-t mt-6">
