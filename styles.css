@@ -3,3 +3,6 @@ body {
     background-size: cover;
     transition: background 0.3s, color 0.3s;
 }
+html {
+  scroll-behavior: smooth;
+}
