@@ -1,51 +1,315 @@
 [
   {
     "name": "Mohit Singh",
-    "location": "Noida, Uttar Pradesh, India",
+    "location": "Dehradun, Uttarakhand, India",
     "rent": 9000,
     "lookingFor": "Any Room",
-    "image": "https://randomuser.me/api/portraits/men/1.jpg"
+    "image": "https://randomuser.me/api/portraits/men/1.jpg",
+    "mobile": "+91 9876543210"
   },
   {
     "name": "Himanshu Singh",
-    "location": "Noida, Uttar Pradesh, India",
-    "rent": 5000,
-    "lookingFor": "Any Room",
-    "image": "https://randomuser.me/api/portraits/men/2.jpg"
-  },
-  {
-    "name": "Mohit Singh",
-    "location": "Noida, Uttar Pradesh, India",
-    "rent": 9000,
-    "lookingFor": "Any Room",
-    "image": "https://randomuser.me/api/portraits/men/1.jpg"
-  },
-  {
-    "name": "Himanshu Singh",
-    "location": "Noida, Uttar Pradesh, India",
-    "rent": 5000,
-    "lookingFor": "Any Room",
-    "image": "https://randomuser.me/api/portraits/men/2.jpg"
-  },
-  {
-    "name": "Mohit Singh",
-    "location": "Noida, Uttar Pradesh, India",
-    "rent": 9000,
-    "lookingFor": "Any Room",
-    "image": "https://randomuser.me/api/portraits/men/1.jpg"
-  },
-  {
-    "name": "Himanshu Singh",
-    "location": "Noida, Uttar Pradesh, India",
-    "rent": 5000,
-    "lookingFor": "Any Room",
-    "image": "https://randomuser.me/api/portraits/men/2.jpg"
-  },
-  {
-    "name": "Himanshu Singh",
-    "location": "Delhi, India",
+    "location": "Dehradun, Uttarakhand, India",
     "rent": 7000,
     "lookingFor": "Single Room",
-    "image": "https://randomuser.me/api/portraits/men/3.jpg"
+    "image": "https://randomuser.me/api/portraits/men/2.jpg",
+    "mobile": "+91 9123456780"
+  },
+  {
+    "name": "Anjali Sharma",
+    "location": "Mussoorie, Uttarakhand, India",
+    "rent": 12000,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/3.jpg",
+    "mobile": "+91 9871234567"
+  },
+  {
+    "name": "Raj Patel",
+    "location": "Haridwar, Uttarakhand, India",
+    "rent": 8000,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/4.jpg",
+    "mobile": "+91 9765432109"
+  },
+  {
+    "name": "Sanya Gupta",
+    "location": "London, UK",
+    "rent": 10000,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/women/5.jpg",
+    "mobile": "+44 7911123456"
+  },
+  {
+    "name": "Arjun Verma",
+    "location": "Manchester, UK",
+    "rent": 7500,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/6.jpg",
+    "mobile": "+44 7911987654"
+  },
+  {
+    "name": "Pooja Singh",
+    "location": "Bristol, UK",
+    "rent": 11000,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/7.jpg",
+    "mobile": "+44 7911345678"
+  },
+  {
+    "name": "Karan Joshi",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 9000,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/men/8.jpg",
+    "mobile": "+91 9123456799"
+  },
+  {
+    "name": "Neha Kapoor",
+    "location": "London, UK",
+    "rent": 6500,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/women/9.jpg",
+    "mobile": "+44 7911765432"
+  },
+  {
+    "name": "Rohit Sharma",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 8500,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/men/10.jpg",
+    "mobile": "+91 9876543201"
+  },
+  {
+    "name": "Divya Singh",
+    "location": "Oxford, UK",
+    "rent": 7000,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/11.jpg",
+    "mobile": "+44 7911654321"
+  },
+  {
+    "name": "Suresh Kumar",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 6000,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/12.jpg",
+    "mobile": "+91 9871234509"
+  },
+  {
+    "name": "Rekha Patel",
+    "location": "Cambridge, UK",
+    "rent": 7500,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/women/13.jpg",
+    "mobile": "+44 7911432567"
+  },
+  {
+    "name": "Vikram Joshi",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 9000,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/14.jpg",
+    "mobile": "+91 9876543245"
+  },
+  {
+    "name": "Anita Verma",
+    "location": "London, UK",
+    "rent": 8500,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/15.jpg",
+    "mobile": "+44 7911765439"
+  },
+  {
+    "name": "Manoj Singh",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 7500,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/men/16.jpg",
+    "mobile": "+91 9876543299"
+  },
+  {
+    "name": "Sunita Kapoor",
+    "location": "London, UK",
+    "rent": 6800,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/women/17.jpg",
+    "mobile": "+44 7911876543"
+  },
+  {
+    "name": "Amit Mehta",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 10500,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/men/18.jpg",
+    "mobile": "+91 9876543288"
+  },
+  {
+    "name": "Kavita Sharma",
+    "location": "Manchester, UK",
+    "rent": 9000,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/19.jpg",
+    "mobile": "+44 7911543210"
+  },
+  {
+    "name": "Rajesh Kumar",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 7000,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/20.jpg",
+    "mobile": "+91 9876543333"
+  },
+  {
+    "name": "Neha Gupta",
+    "location": "Bristol, UK",
+    "rent": 6500,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/women/21.jpg",
+    "mobile": "+44 7911432123"
+  },
+  {
+    "name": "Anil Jain",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 8000,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/22.jpg",
+    "mobile": "+91 9876543355"
+  },
+  {
+    "name": "Pooja Singh",
+    "location": "London, UK",
+    "rent": 9500,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/23.jpg",
+    "mobile": "+44 7911987654"
+  },
+  {
+    "name": "Vivek Kumar",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 7200,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/men/24.jpg",
+    "mobile": "+91 9876543377"
+  },
+  {
+    "name": "Shweta Patel",
+    "location": "London, UK",
+    "rent": 11000,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/women/25.jpg",
+    "mobile": "+44 7911345567"
+  },
+  {
+    "name": "Rakesh Sharma",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 8500,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/men/26.jpg",
+    "mobile": "+91 9876543399"
+  },
+
+  {
+    "name": "Ajay Singh",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 7500,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/28.jpg",
+    "mobile": "+91 9876543401"
+  },
+  {
+    "name": "Kiran Sharma",
+    "location": "Manchester, UK",
+    "rent": 9200,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/29.jpg",
+    "mobile": "+44 7911765437"
+  },
+  {
+    "name": "Sanjay Kumar",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 6800,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/men/30.jpg",
+    "mobile": "+91 9876543412"
+  },
+  {
+    "name": "Deepak Rathi",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 7800,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/31.jpg",
+    "mobile": "+91 9876543420"
+  },
+  {
+    "name": "Priya Sharma",
+    "location": "London, UK",
+    "rent": 9800,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/32.jpg",
+    "mobile": "+44 7911345599"
+  },
+  {
+    "name": "Rohit Verma",
+    "location": "Mussoorie, Uttarakhand, India",
+    "rent": 8200,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/men/33.jpg",
+    "mobile": "+91 9876543456"
+  },
+  {
+    "name": "Seema Gupta",
+    "location": "Manchester, UK",
+    "rent": 8900,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/women/34.jpg",
+    "mobile": "+44 7911876541"
+  },
+  {
+    "name": "Vikas Joshi",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 7600,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/men/35.jpg",
+    "mobile": "+91 9876543466"
+  },
+  {
+    "name": "Nidhi Patel",
+    "location": "Oxford, UK",
+    "rent": 7100,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/women/36.jpg",
+    "mobile": "+44 7911432129"
+  },
+  {
+    "name": "Sanjay Verma",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 6700,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/men/37.jpg",
+    "mobile": "+91 9876543478"
+  },
+  {
+    "name": "Anita Sharma",
+    "location": "London, UK",
+    "rent": 10500,
+    "lookingFor": "Shared Room",
+    "image": "https://randomuser.me/api/portraits/women/38.jpg",
+    "mobile": "+44 7911765421"
+  },
+  {
+    "name": "Rahul Mehta",
+    "location": "Dehradun, Uttarakhand, India",
+    "rent": 8300,
+    "lookingFor": "Any Room",
+    "image": "https://randomuser.me/api/portraits/men/39.jpg",
+    "mobile": "+91 9876543499"
+  },
+  {
+    "name": "Shalini Kapoor",
+    "location": "Bristol, UK",
+    "rent": 7200,
+    "lookingFor": "Single Room",
+    "image": "https://randomuser.me/api/portraits/women/40.jpg",
+    "mobile": "+44 7911432100"
   }
 ]

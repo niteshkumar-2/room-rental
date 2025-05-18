@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Room Rental</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -25,12 +25,11 @@
         ></div>
         <span class="text-2xl font-bold text-purple-700">Room Rental</span>
       </div>
-
       <nav class="space-x-8 text-red-500 font-medium">
-        <a href="#" class="hover:text-red-600">Home</a>
-        <a href="#" class="hover:text-red-600">About</a>
-        <a href="#" class="hover:text-red-600">Service</a>
-        <a href="#" class="hover:text-red-600">Contact</a>
+        <a href="#" id="homeBtn" class="hover:text-red-600">Home</a>
+        <a href="#" id="aboutBtn" class="hover:text-red-600">About</a>
+        <a href="#" id="serviceBtn" class="hover:text-red-600">Service</a>
+        <a href="#" id="contactBtn" class="hover:text-red-600">Contact</a>
       </nav>
     </header>
 
@@ -40,9 +39,8 @@
       <h1
         class="text-4xl md:text-5xl font-bold text-purple-700 mb-8 drop-shadow-lg"
       >
-        location based room
+        Location Based Room
       </h1>
-
       <div
         class="flex items-center w-full max-w-xl border border-gray-400 rounded-full px-4 py-2 bg-white bg-opacity-90 shadow-md"
       >
@@ -62,20 +60,17 @@
         </svg>
         <input
           type="text"
-          placeholder="Search for location..."
+          id="searchInput"
+          placeholder="Search by name, location or rent..."
           class="flex-grow focus:outline-none text-gray-700 bg-transparent"
         />
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5 text-gray-500 ml-2"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 3a9 9 0 019 9c0 3.87-2.469 7.197-5.925 8.485l-.633-.776C15.312 18.545 17 15.88 17 13a5 5 0 00-10 0c0 2.88 1.688 5.545 3.558 6.709l-.633.776C5.469 19.197 3 15.87 3 12a9 9 0 019-9z"
-          />
-        </svg>
       </div>
     </main>
+    <section
+      id="roomList"
+      class="mt-10 px-6 space-y-4 max-w-3xl mx-auto"
+    ></section>
+
+    <script src="script.js"></script>
   </body>
 </html>
