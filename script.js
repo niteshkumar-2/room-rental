@@ -106,7 +106,7 @@ aboutBtn.addEventListener("click", (e) => {
 
         <div class="flex justify-center gap-8 my-6">
           <div class="text-center">
-           <img src="images/himanshupic.jpeg" alt="Himanshu" class="w-24 h-24 rounded-full mx-auto shadow-md object-cover" />
+           <img src="images/himanshu.jpeg" alt="Himanshu" class="w-24 h-24 rounded-full mx-auto shadow-md object-cover" />
             <p class="mt-2 font-semibold text-indigo-700">Himanshu</p>
           </div>
          <div class="text-center">
