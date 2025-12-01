@@ -228,6 +228,7 @@ function renderRooms(rooms) {
       <img src="${escapeHtml(room.image)}" alt="${escapeHtml(
       room.name
     )}" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-purple-300 shadow-md" />
+
       <div class="flex-grow text-center sm:text-left">
         <h2 class="font-bold text-xl text-purple-800 mb-1">${escapeHtml(
           room.name
@@ -241,13 +242,22 @@ function renderRooms(rooms) {
         <p class="text-gray-500 italic mb-1">🛏️ Looking for: ${escapeHtml(
           room.lookingFor
         )}</p>
+
         <div class="flex gap-3 mt-3 justify-center sm:justify-start">
-          <button class="px-4 py-2 bg-purple-600 text-white rounded-lg" data-action="chat" data-owner="${escapeAttr(
-            room.name
-          )}">💬 Chat Now</button>
-          <button class="px-4 py-2 bg-blue-600 text-white rounded-lg" data-action="video">📹 Video Call</button>
+
+          <button class="px-4 py-2 bg-purple-600 text-white rounded-lg" 
+            data-action="chat" 
+            data-owner="${escapeAttr(room.name)}">💬 Chat Now</button>
+
+          <button class="px-4 py-2 bg-blue-600 text-white rounded-lg" 
+            data-action="video">📹 Video Call</button>
+
+          <button class="px-4 py-2 bg-green-600 text-white rounded-lg font-semibold"
+            data-action="book">🛒 Book Now</button>
+
         </div>
       </div>
+
       <div class="hidden sm:block">
         <img src="${escapeHtml(
           roomImageSrc
@@ -257,15 +267,30 @@ function renderRooms(rooms) {
 
     const chatBtn = div.querySelector('[data-action="chat"]');
     const videoBtn = div.querySelector('[data-action="video"]');
+    const bookBtn = div.querySelector('[data-action="book"]');
 
     if (chatBtn) {
-      chatBtn.addEventListener("click", (e) => {
+      chatBtn.addEventListener("click", () => {
         const owner = chatBtn.getAttribute("data-owner") || room.name;
         openChat(owner);
       });
     }
+
     if (videoBtn) {
       videoBtn.addEventListener("click", openVideo);
+    }
+
+    if (bookBtn) {
+      bookBtn.addEventListener("click", () => {
+        if (!isLoggedIn()) {
+          alert("Please login to book this room.");
+          document.getElementById("loginBox").classList.remove("hidden");
+          return;
+        }
+
+        saveHistory(room);
+        alert("Room booked successfully!");
+      });
     }
 
     roomList.appendChild(div);
