@@ -213,7 +213,7 @@ function isLoggedIn() {
 function renderRooms(rooms) {
   roomList.innerHTML = "";
   if (!rooms || rooms.length === 0) {
-    roomList.innerHTML = `<p class="text-gray-700 text-lg text-center">🚫 No rooms found</p>`;
+    roomList.innerHTML = `<p class="text-gray-700 text-lg text-center"> No rooms found</p>`;
     return;
   }
 
