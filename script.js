@@ -6,6 +6,7 @@ const serviceBtn = document.getElementById("serviceBtn");
 const contactBtn = document.getElementById("contactBtn");
 const comingSoon = document.getElementById("comingSoon");
 const loginBtn = document.getElementById("loginBtn");
+const historyBtn = document.getElementById("historyBtn"); 
 
 let allRooms = [];
 
