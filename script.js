@@ -6,7 +6,7 @@ const serviceBtn = document.getElementById("serviceBtn");
 const contactBtn = document.getElementById("contactBtn");
 const comingSoon = document.getElementById("comingSoon");
 const loginBtn = document.getElementById("loginBtn");
-const historyBtn = document.getElementById("historyBtn"); 
+const historyBtn = document.getElementById("historyBtn");
 
 let allRooms = [];
 
@@ -19,6 +19,58 @@ async function fetchRooms() {
   } catch (error) {
     roomList.innerHTML = `<p class="text-red-500">Error loading data: ${error.message}</p>`;
   }
+}
+
+function showHistory() {
+  const history = JSON.parse(localStorage.getItem("history")) || [];
+
+  if (history.length === 0) {
+    roomList.innerHTML = `
+    
+      <div class="flex items-center space-x-4 bg-white p-4 rounded-xl shadow mb-3">
+        <img src="https://images.pexels.com/photos/261146/pexels-photo-261146.jpeg" 
+             class="w-20 h-16 object-cover rounded-md shadow" />
+        <div class="flex-grow">
+          <h2 class="font-bold text-purple-700">Demo Room A</h2>
+          <p class="text-gray-600 text-sm">📍 Dehradun, India</p>
+          <p class="text-green-600 font-semibold text-sm">💰 ₹4500</p>
+          <p class="text-gray-500 text-xs">📅 10/02/2025</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-4 bg-white p-4 rounded-xl shadow mb-3">
+        <img src="https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg" 
+             class="w-20 h-16 object-cover rounded-md shadow" />
+        <div class="flex-grow">
+          <h2 class="font-bold text-purple-700">Demo Room B</h2>
+          <p class="text-gray-600 text-sm">📍 Mussoorie, India</p>
+          <p class="text-green-600 font-semibold text-sm">💰 ₹6000</p>
+          <p class="text-gray-500 text-xs">📅 12/02/2025</p>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  roomList.innerHTML = "";
+
+  history.forEach((h) => {
+    const div = document.createElement("div");
+
+    div.className =
+      "flex items-center space-x-4 bg-white p-4 rounded-xl shadow mb-3";
+
+    div.innerHTML = `
+      <img src="${h.roomImage}" class="w-20 h-16 object-cover rounded-md shadow" />
+      <div class="flex-grow">
+        <h2 class="font-bold text-purple-700">${h.roomName}</h2>
+        <p class="text-gray-600 text-sm">📍 ${h.location}</p>
+        <p class="text-green-600 font-semibold text-sm">💰 ₹${h.rent}</p>
+        <p class="text-gray-500 text-xs">📅 ${h.date}</p>
+      </div>
+    `;
+    roomList.appendChild(div);
+  });
 }
 
 function openChat(ownerName) {
@@ -34,8 +86,6 @@ function openChat(ownerName) {
 
   chatTitle.innerText = `Chat with ${ownerName}`;
   chatBox.classList.remove("hidden");
-
-  // initial demo conversation
   messages.innerHTML = "";
 
   const owner1 = createMessage(
@@ -59,7 +109,6 @@ function openChat(ownerName) {
   messages.appendChild(user2);
   messages.appendChild(owner3);
 
-  // owner follow-up reply after a short delay
   setTimeout(() => {
     const reply = createMessage(
       "Thanks for your message! I will reply shortly.",
@@ -108,7 +157,6 @@ function sendMessage() {
   }, 900);
 }
 
-// Video functions
 function openVideo() {
   const videoBox = document.getElementById("videoBox");
   const video = document.getElementById("cameraStream");
@@ -193,11 +241,6 @@ function renderRooms(rooms) {
         <p class="text-gray-500 italic mb-1">🛏️ Looking for: ${escapeHtml(
           room.lookingFor
         )}</p>
-        <p class="text-blue-700 font-medium">📞 
-          <a href="tel:${encodeURI(
-            room.mobile
-          )}" class="hover:underline">${escapeHtml(room.mobile)}</a>
-        </p>
         <div class="flex gap-3 mt-3 justify-center sm:justify-start">
           <button class="px-4 py-2 bg-purple-600 text-white rounded-lg" data-action="chat" data-owner="${escapeAttr(
             room.name
@@ -226,6 +269,13 @@ function renderRooms(rooms) {
     }
 
     roomList.appendChild(div);
+  });
+}
+
+if (historyBtn) {
+  historyBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    showHistory();
   });
 }
 
@@ -265,7 +315,7 @@ if (homeBtn) {
     e.preventDefault();
     roomList.innerHTML = `
       <div class="bg-white bg-opacity-90 max-w-xl mx-auto p-8 rounded-2xl shadow-lg border border-purple-300">
-        <h2 class="text-4xl text-purple-700 font-extrabold mb-4 text-center">🏠 Welcome to Room Rental</h2>
+        <h2 class="text-4xl text-purple-700 font-extrabold mb-4 text-center">🏠 Welcome to Room Detection</h2>
         <p class="text-center text-lg text-gray-700 font-medium leading-relaxed">
           Use the search below to find your perfect room by <span class="text-purple-600 font-semibold">name</span>, 
           <span class="text-purple-600 font-semibold">location</span>, or <span class="text-purple-600 font-semibold">rent</span>.
@@ -286,7 +336,7 @@ if (aboutBtn) {
             <span>About Us</span>
           </h2>
           <p class="text-lg md:text-xl font-medium text-gray-800 mb-6">
-            Welcome to <span class="text-purple-700 font-bold">Room Rental</span> — your trusted platform for easy and reliable room booking.
+            Welcome to <span class="text-purple-700 font-bold">Room Detection</span> — your trusted platform for easy and reliable room booking.
           </p>
           <div class="flex justify-center gap-8 my-6">
             <div class="text-center">
@@ -299,7 +349,7 @@ if (aboutBtn) {
             </div>
           </div>
           <p class="mt-6 text-center text-purple-600 italic font-medium max-w-xl mx-auto">
-            Our mission is to provide comfortable, affordable, and hassle-free room rentals with a focus on quality service and customer satisfaction.
+            Our mission is to provide comfortable, affordable, and hassle-free room detection with a focus on quality service and customer satisfaction.
           </p>
         </div>
       </section>
